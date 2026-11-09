@@ -18,7 +18,7 @@
     border: 1px solid #ccc;
     padding: 10px;
     width: 400px;
-    height: 100px;
+    height: 400px;
 }
 
 .todo-image{
@@ -51,4 +51,10 @@
    .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
