@@ -30,6 +30,11 @@ const randomIntFromInterval = (min, max) => { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+const deleteTodo = (id) => {
+  const newTodoList = todoList.filter((item) => item.id !== id);
+  setTodoList(newTodoList);
+};
+
 
   return (
     <div className="todo-container">
@@ -41,7 +46,7 @@ const randomIntFromInterval = (min, max) => { // min and max included
       <TodoData
     
       todoList={todoList}
-      
+      deleteTodo={deleteTodo}
       />
         :
       
